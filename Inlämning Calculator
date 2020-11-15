@@ -1,0 +1,189 @@
+using System;
+
+namespace ConsoleApp3calco
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("***Calculator***");
+            // First operations
+            Console.WriteLine("Enter first your operation");
+            string operation = Console.ReadLine();
+
+            //Second Operations
+            Console.WriteLine("Enter second your operation");
+            string secondoperation = Console.ReadLine();
+
+            //First Number
+            Console.WriteLine("Enter your first number ");
+            int num1 = Convert.ToInt16(Console.ReadLine());
+
+            //Second Number
+            Console.WriteLine("Enter your second number");
+            int num2 = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Enter your third number");
+            int num3 = Convert.ToInt16(Console.ReadLine());
+
+            if ((operation == "+") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 + "+" + num2 + "-" + num3 + "=" + (num1 + num2 - num3));
+
+            }
+            else if ((operation == "+") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 + num2 - num3);
+            }
+            if ((operation == "+") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 + "+" + num2 + "+" + num3 + "=" + (num1 + num2 + num3));
+
+            }
+            else if ((operation == "+") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 + num2 + num3);
+            }
+            
+            if ((operation == "+") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 + "+" + num2 + "*" + num3 + "=" + (num1 + num2 * num3));
+
+            }
+            else if ((operation == "+") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 + num2 * num3);
+            }
+           
+            if ((operation == "+") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 + "+" + num2 + "/" + num3 + "=" + (num1 + num2 / num3));
+
+            }
+            else if ((operation == "+") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 + num2 / num3);
+            }
+          
+            if ((operation == "*") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 + "*" + num2 + "+" + num3 + "=" + (num1 * num2 + num3));
+
+            }
+            else if ((operation == "*") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 * num2 + num3);
+            }
+           
+            if ((operation == "*") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 + "*" + num2 + "*" + num3 + "=" + (num1 * num2 * num3));
+
+            }
+            else if ((operation == "*") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 * num2 * num3);
+            }
+           
+            if ((operation == "*") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 + "*" + num2 + "-" + num3 + "=" + (num1 * num2 - num3));
+
+            }
+            else if ((operation == "*") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 * num2 - num3);
+            }
+            
+            if ((operation == "*") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 + "*" + num2 + "/" + num3 + "=" + (num1 * num2 / num3));
+
+            }
+            else if ((operation == "*") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 * num2 / num3);
+            }
+           
+            if ((operation == "-") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 + "-" + num2 + "-" + num3 + "=" + (num1 - num2 - num3));
+
+            }
+            else if ((operation == "-") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 - num2 - num3);
+            }
+
+            if ((operation == "-") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 + "-" + num2 + "+" + num3 + "=" + (num1 - num2 + num3));
+
+            }
+            else if ((operation == "-") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 - num2 + num3);
+            }
+
+            if ((operation == "-") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 + "-" + num2 + "*" + num3 + "=" + (num1 - num2 * num3));
+
+            }
+            else if ((operation == "-") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 - num2 * num3);
+            }
+
+            if ((operation == "-") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 + "-" + num2 + "/" + num3 + "=" + (num1 - num2 / num3));
+
+            }
+            else if ((operation == "-") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 - num2 / num3);
+            }
+          
+            if ((operation == "/") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 + "/" + num2 + "+" + num3 + "=" + (num1 / num2 + num3));
+
+            }
+            else if ((operation == "/") && (secondoperation == "+"))
+            {
+                Console.WriteLine(num1 / num2 + num3);
+            }
+
+            if ((operation == "/") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 + "/" + num2 + "-" + num3 + "=" + (num1 / num2 - num3));
+
+            }
+            else if ((operation == "/") && (secondoperation == "-"))
+            {
+                Console.WriteLine(num1 / num2 - num3);
+            }
+
+            if ((operation == "/") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 + "/" + num2 + "*" + num3 + "=" + (num1 / num2 * num3));
+
+            }
+            else if ((operation == "/") && (secondoperation == "*"))
+            {
+                Console.WriteLine(num1 / num2 * num3);
+            }
+
+            if ((operation == "/") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 + "/" + num2 + "/" + num3 + "=" + (num1 / num2 / num3));
+
+            }
+            else if ((operation == "/") && (secondoperation == "/"))
+            {
+                Console.WriteLine(num1 / num2 / num3);
+            }
+        }
+    }
+}
